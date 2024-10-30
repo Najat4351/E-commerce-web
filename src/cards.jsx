@@ -2,8 +2,8 @@
 import React,{useState} from 'react'
 function Card(props) {
   const [source2, setsource2] = useState()
-  const SecondImages=['/cleanser2.jpg','/eyecream.jpg','/moisturizer2.jpg','/primer.jpg','/sunscreen2.jpg','/toner.webp']
-  const FirstImages=['/cleanser1.jpg','/eyecream1.jpg','/moisturzer1.jpg','/primer1.jpg','/sunscreen1.jpg','/toner2.jpg']
+  const SecondImages=['./cleanser2.jpg','./eyecream.jpg','./moisturizer2.jpg','./primer.jpg','./sunscreen2.jpg','./toner.webp']
+  const FirstImages=['./cleanser1.jpg','./eyecream1.jpg','./moisturzer1.jpg','./primer1.jpg','./sunscreen1.jpg','./toner2.jpg']
   const handlesourceleft=(event)=>{
     const Id=event.target.dataset.value;
     const found2=SecondImages.find((secondimage,index)=>index==Id)
